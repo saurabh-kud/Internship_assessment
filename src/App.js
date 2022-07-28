@@ -66,7 +66,7 @@ const App = () => {
         <div className="innerform">
           <form onSubmit={handleSubmit}>
             <h3>Fill this form</h3>
-            <span className="error">{isError}</span>
+
             <label>Name</label>
             <input
               placeholder="Xyz  kumar"
