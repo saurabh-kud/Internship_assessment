@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { toast } from "react-toastify";
 
 import "./App.css";
@@ -10,8 +10,6 @@ const App = () => {
     gender: "man",
     address: "",
   });
-
-  const [isError, setError] = useState("");
 
   const { name, phone, address, gender } = formData;
 
@@ -61,12 +59,6 @@ const App = () => {
       }
     }
   };
-
-  useEffect(() => {
-    setTimeout(() => {
-      setError("");
-    }, 2000);
-  }, [isError]);
 
   return (
     <>
